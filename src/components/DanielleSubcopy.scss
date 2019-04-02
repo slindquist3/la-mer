@@ -1,0 +1,100 @@
+@import '../assets/partials/_variables';
+
+
+.DanielleSubcopy {
+
+  .subcopy-container {
+
+    width: 40%;
+    min-width: 700px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+
+    .white-box {
+
+      background-color: white;
+      color: black;
+      width: 30%;
+      float: right;
+      padding: 30px;
+      margin-left: 30px;
+      margin-bottom: 20px;
+
+      .large-text {
+        font-size: 28px;
+        line-height: 40px;
+        padding-bottom: 20px;
+      }
+
+      .small-text {
+        font-style: italic;
+      }
+
+      &.desktop{
+        display: inline;
+
+      }
+
+      &.mobile {
+        display: none;
+      }
+
+    }
+    .p1 {
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+
+    p {
+      line-height: 40px;
+      font-size: 20px;
+    }
+
+  }
+
+  @media only screen and (max-width : $mobile-breakpoint) {
+
+
+    .subcopy-container {
+      min-width: 0;
+      width: 90%;
+      margin: auto;
+
+      .p1 {
+        font-size:$mobile-body-copy;
+        line-height: $mobile-body-line-height;
+      }
+
+      .white-box {
+        width: 100%;
+        .large-text {
+          font-size: $mobile-large-copy;
+          line-height: $mobile-large-line-height;
+          padding: 30px;
+        }
+
+        .small-text {
+          padding-left: 30px;
+          padding-bottom: 30px;
+        }
+        &.desktop {
+          display: none;
+        }
+
+        &.mobile {
+          display: block;
+          float: none;
+          margin-left: 0;
+          margin-right: 0;
+          width: 100%;
+          position: relative;
+          padding: 0px;
+        }
+      }
+    }
+  }
+
+
+}

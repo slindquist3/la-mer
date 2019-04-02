@@ -1,0 +1,27 @@
+//import our fonts
+@import "assets/fonts/Brown.scss";
+@import "assets/partials/_variables.scss";
+
+
+//fix cross-browser styling
+*, h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Graphik", sans-serif;
+}
+
+p {
+  font-size: $desktop-body-copy;
+  font-size: $desktop-body-line-height;
+
+  @media only screen and (max-width : $mobile-breakpoint) {
+    font-size: $mobile-body-copy;
+    line-height: $mobile-body-line-height;
+  }
+
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }

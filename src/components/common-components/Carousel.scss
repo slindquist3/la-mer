@@ -1,0 +1,139 @@
+@import '../../assets/partials/_variables';
+
+.Carousel {
+  width: 80%;
+  min-height: 500px;
+  max-width: 900px;
+  text-align: center;
+  margin-left: 50%;
+  padding-top: 60px;
+
+  transform: translate(-50%, 0%);
+
+  .slick-arrow {
+    top: 400px;
+    height: auto;
+  }
+
+  .slide-count {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    position: absolute;
+    top: 78%;
+    width: 30px;
+  }
+
+  .slick-prev {
+    left: 90%;
+  }
+  .slick-next {
+    right: 0;
+  }
+
+  .carousel-img {
+    width: 63.5%;
+    display: inline;
+    float: left;
+    padding-right: 20px;
+  }
+
+  .carousel-ad-desktop {
+    width:33%;
+    display: inline;
+    color: white;
+    font-size: 32px;
+
+    .quote-text {
+      text-align: left;
+      font-weight: 300;
+      font-size: 30px;
+    }
+  }
+
+  .name-box {
+    font-size: 14px;
+    padding-bottom: 40px;
+    text-align: left;
+
+    .name {
+      font-size: 14px;
+      font-weight: 300;
+      display: inline;
+      text-align: left;
+    }
+    .quote {
+      display: inline;
+      padding-right: 10px;
+    }
+  }
+
+  .carousel-ad-mobile {
+    display: none;
+    color: white;
+    font-size: 32px;
+
+  }
+
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin-bottom: 60px;
+
+    .slick-arrow {
+      top:120%;
+    }
+
+    .slide-count {
+      top: 72%;
+    }
+
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin-bottom: 60px;
+    min-height: 400px;
+    margin-top: 0;
+    padding-top: 40px;
+
+    .carousel-img {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .slick-arrow {
+      top:105%;
+    }
+
+    .slide-count {
+      top: 100%;
+      position: relative;
+    }
+
+    .slick-prev {
+      padding-right: 40px;
+      left: 80%;
+
+    }
+
+    .name-box {
+      margin-top: 20px;
+      padding-bottom: 0px;
+    }
+
+    .carousel-ad-desktop {
+      display: none;
+      text-align: left;
+    }
+
+    .carousel-ad-mobile {
+      padding-top: 5px;
+      display: block;
+      width:100%;
+      text-align: left;
+    }
+
+
+  }
+
+
+}

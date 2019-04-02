@@ -1,0 +1,102 @@
+@import '../assets/partials/_variables';
+
+.Intro {
+  background-image: url("https://furthermore-cdn.equinox.com/source-of-strength/static/media/la-mer-top-image-v2.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 80px;
+  background-color: black;
+
+    .text-container {
+      padding-top: 180px;
+      text-align: center;
+      font-size: 24px;
+      width: 100%;
+      padding-bottom: 40px;
+
+      .logo-container {
+        text-align: center;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+
+        .logo {
+          max-width: 200px;
+          height: auto;
+        }
+      }
+      .header {
+        font-size: 72px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 5px;
+        line-height: 90px;
+
+        .break {
+          display: block;
+        }
+      }
+
+      .presents {
+        margin-top: -20px;
+        font-weight: lighter;
+        margin-bottom: 60px;
+        font-size: 24px;
+      }
+
+      .subcopy {
+        margin-top: 20px;
+        font-size: $desktop-body-copy;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        font-weight: 300;
+        line-height: $desktop-body-line-height;
+      }
+
+    }
+
+    @media only screen and (max-width : $mobile-breakpoint) {
+      background-size: cover;
+      background-position: center 0px;
+
+
+
+      .text-container {
+
+        .header {
+          font-size: 42px;
+          line-height: 62px;
+
+          .break-mobile {
+            display: block;
+          }
+        }
+
+        .logo-container {
+          .logo {
+            width: 180px;
+          }
+        }
+
+        .presents {
+          font-size: 18px;
+          margin-bottom: 40px;
+          font-weight: 300;
+        }
+
+        .subcopy {
+          font-size: $mobile-body-copy;
+          line-height: $mobile-body-line-height;
+          text-align: left;
+          width: 80%;
+          margin-left: 10%;
+        }
+
+      }
+
+
+    }
+
+
+}

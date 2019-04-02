@@ -1,0 +1,123 @@
+@import '../assets/partials/_variables';
+
+
+.Navbar {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 50;
+  border-bottom: 1px solid white;
+
+  .la-mer {
+    margin-top:30px;
+    width: 120px;
+    margin-left: 25px;
+    display: inline;
+    float: left;
+
+
+  }
+
+  .fm {
+    margin-top: 30px;
+    width: 120px;
+    display: inline;
+    float:right;
+    margin-right: 35px;
+
+    &.mobile {
+      display: none;
+    }
+
+    &.desktop {
+      display: inline;
+    }
+  }
+
+  .mobile-anchors {
+    display: none;
+  }
+
+  @media only screen and (max-width : $mobile-breakpoint) {
+    height: 50px;
+
+    .fm {
+      &.mobile {
+        display: inline;
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 100px;
+      }
+
+      &.desktop {
+        display: none;
+      }
+    }
+
+    .la-mer {
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 100px;
+    }
+
+    .mobile-anchors {
+      display: block;
+      list-style-type: none;
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      margin-top: 51px;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        width: 30%;
+        padding-top:2px;
+        font-weight: 300;
+        font-size: 12px;
+
+        .break {
+          display: block;
+        }
+        &.pipe {
+          width: 2px;
+          font-size:18px;
+          font-weight:lighter;
+        }
+
+        &.mobile-anchor {
+          a.anchor-text {
+            text-decoration: none;
+            color: white;
+            &:active {
+              color: white;
+            }
+
+
+
+          }
+
+          &#solo-travel {
+            vertical-align: middle ;
+            height: 25px;
+          }
+
+        }
+
+
+
+
+      }
+
+
+
+    }
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,46 @@
+.TalentModule {
+  width: 100%;
+
+  .SecondImageContainer {
+    //i named it like this because it's acting like a component
+    width: 40%;
+    min-width: 700px;
+    margin:auto;
+
+    .img {
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .main-text {
+      padding-top: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      min-width: 0;
+
+      .img {
+        display: none;
+      }
+
+      .main-text {
+        font-size: 24px;
+        margin: auto;
+        padding-top: 30px;
+      }
+
+    }
+
+  }
+
+  padding-top: 50px;
+  margin-top: -50px;
+
+}

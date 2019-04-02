@@ -1,0 +1,102 @@
+@import '../assets/partials/_variables';
+
+.JoshSubcopy {
+
+  .subcopy-container {
+    width: 40%;
+    margin:auto;
+    min-width: 700px;
+
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+    .white-box {
+      background-color: white;
+      color: black;
+      width: 35%;
+      float: left;
+      padding: 30px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 40px;
+
+      .large-text {
+        font-size: 28px;
+        line-height: 40px;
+        padding-bottom: 20px;
+      }
+
+    }
+    .p1 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 40px;
+      font-size: 20px;
+    }
+
+    .part-two {
+      clear: left;
+      padding-left: 35px;
+      padding-right: 35px;
+      font-size: 35px;
+      font-weight: lighter;
+      margin-top: 30px;
+      line-height: 45px;
+    }
+
+  }
+
+  @media only screen and (max-width : $mobile-breakpoint) {
+
+    .subcopy-container {
+      width: 90%;
+      min-width: 0;
+      margin:auto;
+
+      margin-bottom: 20px;
+
+      p {
+        font-size: $mobile-body-copy;
+        line-height: $mobile-body-line-height;
+      }
+
+      .part-one {
+        margin-bottom: 20px;
+        .white-box {
+          width: 100%;
+          position: relative;
+          display: block;
+          float: none;
+          margin-bottom: 20px;
+          margin-right:0;
+          margin-left: 0;
+          padding: 0px;
+
+          .large-text {
+            font-size: $mobile-large-copy;
+            line-height: $mobile-large-line-height;
+            padding: 30px;
+          }
+
+          .small-text {
+            padding-left: 30px;
+            padding-bottom: 30px;
+          }
+      }
+
+      .part-two {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size:$mobile-large-copy;
+
+      }
+    }
+
+  }
+
+
+
+}
+}

@@ -1,0 +1,85 @@
+@import '../assets/partials/_variables';
+
+
+.IntroSubcopy {
+  position: relative;
+  width: 100%;
+
+  .subcopy-container {
+
+    width: 40%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    min-width: 700px;
+
+    p {
+      line-height: $desktop-body-line-height;
+      font-size: $desktop-body-copy;
+    }
+
+    .white-box {
+      background-color: white;
+      color: black;
+      padding: 30px;
+      margin-left: 15px;
+      margin-bottom: 20px;
+      width:38%;
+      display: inline;
+
+      .large-text {
+        font-size: 28px;
+        line-height: 50px;
+        padding-bottom: 20px;
+      }
+
+    }
+
+    .p1 {
+      margin-bottom: 30px;
+      width: 50%;
+      display: inline;
+    }
+
+
+  }
+
+  @media only screen and (max-width : $mobile-breakpoint) {
+
+    .subcopy-container {
+      min-width: 0;
+      width: 90%;
+      margin:auto;
+
+      .p1 {
+        width: 100%;
+        display: block;
+        font-size: $mobile-body-copy;
+        line-height: $mobile-body-line-height;
+      }
+
+      .p2 {
+        font-size: $mobile-body-copy;
+        line-height: $mobile-body-line-height;
+      }
+
+      .white-box {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        padding-top: 20px;
+        .large-text {
+          line-height: 36px;
+
+
+        }
+      }
+    }
+
+
+  }
+
+
+}

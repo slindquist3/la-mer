@@ -1,0 +1,97 @@
+@import '../assets/partials/_variables';
+
+.Anchors {
+  width: 40%;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 60px;
+  min-width: 700px;
+
+  .text-container {
+    margin-top: 20px;
+    .discover {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .vidoes {
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: block;
+      font-weight: 300;
+      font-size: 18px;
+
+      a {
+        color: white;
+
+        &:active {
+          color: white;
+        }
+
+      }
+
+    }
+
+    .pipe {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 16px;
+    }
+
+    .trainer-list {
+      margin-top: 20px;
+      font-weight: 400;
+    }
+  }
+
+  @media only screen and (max-width : $mobile-breakpoint) {
+
+    margin-bottom: 40px;
+    width: 90%;
+    min-width: 0px;
+
+
+    .text-container {
+
+      .discover {
+        font-size: $mobile-body-copy;
+      }
+      .videos {
+        font-size: $mobile-body-copy;
+
+      }
+
+      .trainer-list {
+        font-size: 18px;
+        margin-top: 10px;
+
+        .name {
+          font-size: 18px;
+          line-height: 20px;
+          display: block;
+        }
+      }
+    }
+
+    ul {
+      li {
+        font-size: $mobile-body-copy;
+        line-height: $mobile-body-line-height;
+      }
+    }
+
+
+  }
+
+
+}

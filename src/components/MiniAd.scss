@@ -1,0 +1,88 @@
+@import '../assets/partials/_variables';
+
+
+.MiniAd {
+
+  margin-top: 80px;
+
+  width: 100%;
+  margin: auto;
+  position: relative;
+
+  .mini-ad-container {
+
+    width: 40%;
+    margin: auto;
+    min-width: 700px;
+
+    .image-container {
+      width: 50%;
+      height: auto;
+      display: inline;
+
+      img {
+        width: 35%;
+        max-width: 400px;
+      }
+    }
+
+    .text-container {
+      width: 55%;
+      display: inline;
+      position: relative;
+      float:right;
+      font-weight: 300;
+
+      .quote-text {
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: 10px;
+      }
+
+      .quote-name {
+        font-size: 14px;
+      }
+
+      .quote {
+        display: inline;
+        position: relative;
+        margin-top: 0;
+        padding-right: 10px;
+      }
+    }
+
+    @media only screen and (max-width : $mobile-breakpoint) {
+
+      width: 90%;
+      min-width: 0;
+
+      margin-top: 40px;
+
+      .image-container {
+        width: 100%;
+        display: block;
+        text-align: center;
+
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .text-container {
+        margin-top: 40px;
+        width: 100%;
+        display: block;
+        float:none;
+
+        .quote-text {
+          font-size: $mobile-large-copy;
+          line-height: $mobile-large-line-height;
+        }
+      }
+
+
+    }
+  }
+
+}

@@ -1,0 +1,80 @@
+$break-mobile: 768px;
+$break-tablet: 1060px;
+
+@import '../../assets/partials/_variables';
+
+
+.Bio {
+  width: 100%;
+  background-color: black;
+  position: relative;
+  overflow: auto;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin-top: 40px;
+  }
+
+  .bio-container {
+    width: 40%;
+    min-width: 700px;
+    margin:auto;
+    margin-top: 10%;
+
+    .bio-image {
+      width: 50%;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 5px;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .name {
+
+      font-size: 45px;
+      font-weight: 400;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 28px;
+        padding-left: 0px;
+      }
+
+    }
+
+    .heading {
+      font-size: 45px;
+      font-weight: 400;
+      padding-bottom: 30px;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 36px;
+        padding-left: 0px;
+        padding-bottom: 30px;
+      }
+    }
+
+    .subcopy {
+      line-height: $desktop-body-line-height;
+      font-size: $desktop-body-copy;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        padding-left: 0px;
+        font-size: $mobile-body-copy;
+        line-height: $mobile-body-line-height;
+      }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 90%;
+      margin: auto;
+      min-width: 0;
+    }
+
+    #bee-headshot {
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -5,6 +5,8 @@ Thanks for taking the time for this code review.
 
 This project is a collaboration between Equinox's digital magazine Furthermore and the skincare brand La Mer. The project features 3 athletes and their strategies for self-care.
 
+View the project in production here: https://furthermore.equinox.com/la-mer
+
 ## Requirements
 
 As the lead developer for this project, I needed to meet the following requirements:

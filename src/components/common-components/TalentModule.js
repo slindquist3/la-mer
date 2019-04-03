@@ -1,8 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 
-// import ScrollableAnchor from 'react-scrollable-anchor'
-
 import Bio from './Bio.js'
 import Video from './Video.js'
 import Carousel from './Carousel.js';

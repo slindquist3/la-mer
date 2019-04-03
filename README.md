@@ -1,9 +1,19 @@
 
 ## Hello, Blockchain!
 
-This project is a collaboration between Equinox's digital magazine Furthermore and La Mer.
+This project is a collaboration between Equinox's digital magazine Furthermore and the skincare brand La Mer. The project features 3 athletes and their strategies for self-care.
 
-It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and has since been ejected to integrate SCSS.
+## Requirements
+
+As the lead developer for this project, I needed to meet the following requirements:
+1. Anchor links that could take users to specific sections of the page for each talent.
+2. Carousels that house videos for each talent, with the ability to navigate to a specific video from an external url, ex. https://furthermore.equinox.com/la-mer?2#joshvideos should take the user to Josh's video carousel section and feature the third video (the query parameters provide index values to an array of the talent's videos, starting with the first video at position 0)
+3. Complete responsiveness so that the project displays well across mobile devices and desktops
+
+## What I would refactor in the future
+
+Since building this project I've learned about the library 'styled-components.' I like the idea of using styled-components to minimize CSS bleeding, and as I see more developers moving to this pattern, I'd like to get comfortable seeing logic, templating, and styling all in one file.
+
 
 
 ## Available Scripts
@@ -36,8 +46,9 @@ You may create subdirectories inside `src`. For faster rebuilds, only files insi
 
 Only files inside `public` can be used from `public/index.html`.<br>
 
-## Fonts and styling
-All styling files can use the .scss extension. When building, Webpack preprocesses those files into regular CSS.<br>
-Brown, our brand font, has been imported as the default parent font. As our brand develops, this repository can be updated to match our brand's style guide.
 
-##
+
+
+
+
+## What I would improve in another refactor

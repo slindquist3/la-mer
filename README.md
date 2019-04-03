@@ -14,15 +14,15 @@ As the lead developer for this project, I needed to meet the following requireme
 
 ## Major Components
 
--At the top level is the App component, which houses the Navbar, the Intro section, Anchor links, Ads, and each TalentModule.
--The TalentModule contains each athlete's Bio and portrait, a featured Video, as well as a Carousel.
--Each Carousel contains a series of slides that include questions followed by each athlete's answers in a video.
+* At the top level is the App component, which houses the Navbar, the Intro section, Anchor links, Ads, and each TalentModule.
+* The TalentModule contains each athlete's Bio and portrait, a featured Video, as well as a Carousel.
+* Each Carousel contains a series of slides that include questions followed by each athlete's answers in a video.
 
 ## What I would refactor in the future
 
-Since building this project I've learned about the library 'styled-components.' I like the idea of using styled-components to minimize CSS bleeding, and as I see more developers moving to this pattern, I'd like to get comfortable seeing logic, templating, and styling all in one file.
+* Since building this project I've learned about the library 'styled-components.' I like the idea of using styled-components to minimize CSS bleeding, and as I see more developers moving to this pattern, I'd like to get comfortable seeing logic, templating, and styling all in one file.
 
-I also know that I can further abstract data to sit only at the top App level. Because this project doesn't require any API calls, several components like the Subcopy sections contain data that could also be passed down as props like data is in the TalentModule.
+* I also know that I can further abstract data to sit only at the top App level. Because this project doesn't require any API calls, several components like the Subcopy sections contain data that could also be passed down as props like data is in the TalentModule.
 
 
 ## Available Scripts

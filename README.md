@@ -26,7 +26,7 @@ As the lead developer for this project, I needed to meet the following requireme
 
 
 ## Available Scripts
-In the project directory, you can run:
+After running `npm install` in the project directory, you can run:
 
 #### `npm start`
 

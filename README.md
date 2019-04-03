@@ -1,11 +1,10 @@
 
-## Overview
+## Hello, Blockchain!
 
-This repository is intended for the quick deployment of Furthermore microsites and landing pages for our brand partnerships.
+This project is a collaboration between Equinox's digital magazine Furthermore and La Mer.
 
-It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and has since been ejected from Create React App to use SCSS.
+It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and has since been ejected to integrate SCSS.
 
-For help with React, please consult the Create React App docs.
 
 ## Available Scripts
 In the project directory, you can run:
@@ -41,7 +40,4 @@ Only files inside `public` can be used from `public/index.html`.<br>
 All styling files can use the .scss extension. When building, Webpack preprocesses those files into regular CSS.<br>
 Brown, our brand font, has been imported as the default parent font. As our brand develops, this repository can be updated to match our brand's style guide.
 
-## React Router
-For easy client-side routing, React Router has been added to this project and is wrapping the main app component. If your project doesn't require any navigation, you can edit the index.js file to remove the Router.
-
-For more information about React Router, visit the [documentation](https://github.com/ReactTraining/react-router).
+##

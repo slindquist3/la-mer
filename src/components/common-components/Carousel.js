@@ -24,9 +24,7 @@ export default class SimpleSlider extends Component {
       var slide = parseInt(query.slice( 1 ));
 
       this.slider.slickGoTo(slide);
-
     }
-
   }
 
   render() {
@@ -51,15 +49,7 @@ export default class SimpleSlider extends Component {
               return (
                 <div key={"a" + i}>
 
-{/*
-                  <video key={"b" + i} className="carousel-img" poster={item.thumbnail} controls>
-                    <source src={item.video}/>
-                  </video> */}
-
                   <iframe key={"b" + i} className="carousel-img" src={"https://www.youtube.com/embed/" + item.video} width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
-
-
 
                   <div className="name-box">
                     <img className="quote" src="http://furthermore-cdn.equinox.com/source-of-strength/static/media/white-quote-mark.png"/>

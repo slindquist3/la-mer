@@ -10,7 +10,6 @@ import IntroSubcopy from './IntroSubcopy.js'
 import MiniAd from './MiniAd.js'
 import Anchors from './Anchors.js'
 
-
 class App extends React.Component {
 
   componentDidMount() {
@@ -67,7 +66,6 @@ class App extends React.Component {
                      quote: "I’m typically looking for something that allows oil control, a great moisturizer, and a protectant from the elements.",
                      thumbnail: "https://furthermore-cdn.equinox.com/source-of-strength/static/media/LM_Q4.png",
                      name: "Josh Dixon"}],
-
 
 
         danielleData = [{video: "X9SCMQEvXKg",
